@@ -1,0 +1,7 @@
+<h1>メモ編集</h1>
+<%= form_for(@memo) do |f| %>
+  <div><%= f.label :title %></div>
+  <div><%= f.text_field :title %></div>
+  <div><%= f.submit %></div>
+<% end %>
+<%= link_to '戻る', memos_path %>

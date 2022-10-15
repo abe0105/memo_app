@@ -1,0 +1,15 @@
+<h1>メモ一覧</h1>
+<table>
+  <thead>
+    <tr>
+      <th>メモ名</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @memos.each do |memo| %>
+      <tr>
+        <td><%= memo.title %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

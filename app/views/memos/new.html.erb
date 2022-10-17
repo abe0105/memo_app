@@ -1,7 +1,7 @@
 <h1>新規メモ</h1>
 <%= form_for(@memo) do |f| %>
-  <div><%= f.label :title %></div>
+  <div><%= f.label :title, "メモを入力↓" %></div>
   <div><%= f.text_field :title %></div>
-  <div><%= f.submit %></div>
+  <div><%= f.submit "メモ投稿" %></div>
 <% end %>
 <%= link_to '戻る', memos_path %>

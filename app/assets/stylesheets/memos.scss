@@ -1,3 +1,22 @@
 // Place all the styles related to the memos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header{
+  background: linear-gradient(to right,#e60000,#f39800,#fff100,#009944,#0068b7,#1d2088,#920783);
+}
+
+.memo-header{
+  display: flex;
+  justify-content: center;
+}
+
+.memo-name{
+  display: flex;
+  justify-content: center;
+}
+
+.memo-title{
+  
+  font-size: 30px;
+}

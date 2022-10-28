@@ -1,19 +1,11 @@
 <header class="header">
 <h1 class="memo-header">メモ一覧</h1>
 </header>
-<table>
-  <thead>
-    <tr>
-      <h1 class="memo-name">メモ名</h1>
-    </tr>
-  </thead>
-  <tbody class="memo-title">
+ <div class="memo-tuika"><%= link_to 'メモを追加', new_memo_path %></div>
+  <div class="memo-title">
     <% @memos.each do |memo| %>
-        <td><%= memo.title %></td>
-        <td><%= link_to '編集', edit_memo_path(memo) %></td>
-        <td><%= link_to '削除', memo_path(memo), method: :delete %></td>
-      </tr>
+        <p><%= memo.title %></p>
+        <p><%= link_to '編集', edit_memo_path(memo) %></p>
+        <p><%= link_to '削除', memo_path(memo), method: :delete %></p>
+        
     <% end %>
-  </tbody>
-</table>
-<%= link_to '追加', new_memo_path %>

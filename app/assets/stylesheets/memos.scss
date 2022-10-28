@@ -6,6 +6,13 @@
   background: linear-gradient(to right,#e60000,#f39800,#fff100,#009944,#0068b7,#1d2088,#920783);
 }
 
+.memo-tuika {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  border: solid 1px #f39800
+}
+
 .memo-header{
   display: flex;
   justify-content: center;
@@ -17,6 +24,22 @@
 }
 
 .memo-title{
-  
+  display: flex;
+  justify-content: center;
   font-size: 30px;
+}
+
+.sinki-memo {
+  display: flex;
+  justify-content: center;
+}
+
+.memo-nyuuryoku {
+  display: flex;
+  justify-content: center;
+}
+
+.sinki-memo {
+  background-color: #b4dbc5;
+  height: 60px;
 }
